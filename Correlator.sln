@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correlator", "Correlator\Correlator.csproj", "{F3BD21CC-EC07-4643-B64B-60E4D341A907}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correlator.Tests", "Correlator.Tests\Correlator.Tests.csproj", "{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{F3BD21CC-EC07-4643-B64B-60E4D341A907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3BD21CC-EC07-4643-B64B-60E4D341A907}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3BD21CC-EC07-4643-B64B-60E4D341A907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
