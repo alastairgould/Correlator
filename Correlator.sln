@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correlator", "Correlator\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correlator.Tests", "Correlator.Tests\Correlator.Tests.csproj", "{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correlator.IntergrationTests", "Correlator.IntergrationTests\Correlator.IntergrationTests.csproj", "{E251D447-01FC-4AE5-A4A3-1B860F5765D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADB01446-375D-4AC7-9BF1-54FB0C8539D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E251D447-01FC-4AE5-A4A3-1B860F5765D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E251D447-01FC-4AE5-A4A3-1B860F5765D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E251D447-01FC-4AE5-A4A3-1B860F5765D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E251D447-01FC-4AE5-A4A3-1B860F5765D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

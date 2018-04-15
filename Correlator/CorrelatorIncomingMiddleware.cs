@@ -5,15 +5,19 @@ using Microsoft.Extensions.Primitives;
 
 namespace Correlator
 {
-    public class CorrelatorMiddleware : IMiddleware
+    public class CorrelatorIncomingMiddleware : IMiddleware
     {
         private readonly string _correlationHeader;
         private readonly Func<string> _generateCorrelationId;
+        private readonly RequestCorrelationId _requestCorrelationId;
 
-        public CorrelatorMiddleware(string correlationHeader, Func<string> generateCorrelationId)
+        public CorrelatorIncomingMiddleware(string correlationHeader, 
+            Func<string> generateCorrelationId,
+            RequestCorrelationId requestCorrelationId)
         {
             _correlationHeader = correlationHeader ?? throw new ArgumentNullException(nameof(correlationHeader));
             _generateCorrelationId = generateCorrelationId ?? throw new ArgumentNullException(nameof(generateCorrelationId));
+            _requestCorrelationId = requestCorrelationId ?? throw new ArgumentNullException(nameof(requestCorrelationId));
         }
         
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
@@ -24,9 +28,10 @@ namespace Correlator
             {
                 correlationId = new StringValues(_generateCorrelationId());
             }
-
+            
             context.Response.Headers[_correlationHeader] = correlationId;
             context.TraceIdentifier = correlationId;
+            _requestCorrelationId.CorrelationId = correlationId;
 
             if (next != null)
             {
