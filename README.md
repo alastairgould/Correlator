@@ -1,6 +1,10 @@
 # Correlator
 Receive, Generate, Log and pass through correlation ids
 
+## Requirements
+
+ASP.NET Core 2.1 or higher.
+
 ## How to Use
 
 To add the middleware
