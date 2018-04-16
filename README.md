@@ -1,5 +1,5 @@
 # Correlator
-Receive, Generate, Log and pass through correlation ids
+Incredibly simple middleware for handling correlation headers.
 
 ## Requirements
 
