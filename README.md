@@ -3,6 +3,11 @@ Incredibly simple middleware for receiving, logging and sending correlation head
 
 ## Why
 
+Correlation header middleware already exists, but since asp.net core 2.1 things like HTTPClientFactory has made it incredibly easy to do. 
+Instead of building my own infrastructure i'm utilising asp.net core 2.1 as much as possible to create a really simple implementation. 
+
+It also has sane defaults and works out the box with very little work from the programmer.
+
 ## Requirements
 
 ASP.NET Core 2.1 or higher.
