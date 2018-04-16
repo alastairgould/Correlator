@@ -1,5 +1,5 @@
 # Correlator
-Incredibly simple middleware for handling correlation headers.
+Incredibly simple middleware for receiving, logging and sending correlation headers for asp.net core 2.1
 
 ## Requirements
 
