@@ -4,7 +4,7 @@ Receive, Generate, Log and pass through correlation ids
 ## How to Use
 
 ```csharp
-services.AddCorrelationId()
+services.AddCorrelator()
 ```
 
 When adding HttpClients to your container use the `AddCorrelationHeaders` fluent interface on the client to make sure any requests 
