@@ -3,6 +3,8 @@ Receive, Generate, Log and pass through correlation ids
 
 ## How to Use
 
+To add the middleware
+
 ```csharp
 services.AddCorrelator()
 ```
